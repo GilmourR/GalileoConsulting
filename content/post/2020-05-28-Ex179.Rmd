@@ -29,7 +29,7 @@ lmfit
 
 ## Cleanup model output and format table
 
-Use broom's tidy function to create a data frame of the model output and output that dataframe using knitr's kable function: 
+Use "broom"'s "tidy" function to create a data frame of the model output and output that dataframe using "knitr"'s "kable" function: 
 
 ```{r output}
 library(broom)        # tidyr
@@ -37,8 +37,9 @@ library(magrittr)     # %>%
 
 library(knitr)        # kable
 library(kableExtra)   # kable_styling
-tidy(lmfit) %>% kable(format="latex",booktabs=TRUE,
+mytable <- tidy(lmfit) %>% kable(format="latex",booktabs=TRUE,
                       caption="My table caption",digits=2) %>% 
                 kable_styling(latex_options = "HOLD_position")
+mytable
 ```
-Add longtable} to kable as required. For example: kable(longtable=TRUE, format="latex", booktabs=TRUE, caption="My table caption")
+Add "longtable" to "kable" as required. For example: "kable(longtable=TRUE, format="latex", booktabs=TRUE, caption="My table caption")"
