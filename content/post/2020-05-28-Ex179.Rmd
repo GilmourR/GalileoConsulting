@@ -1,20 +1,23 @@
 ---
 title: "Hello Blog in R"
+subtitle: "This is a test"
+summary: "This shows how to run lm, tidy the output and format it for publication"
+
 author: "Ross Gilmour"
-date: 2020-05-28T21:13:14-05:00
-categories: ["R"]
-tags: ["R Markdown", "Rmd", "knitr"]
-output: 
-   html_document:
-     keep_tex: true
-header-includes:
-   - \usepackage{caption}
-   - \usepackage{booktabs}
+date: "2020-05-28"
+slug: rmarkdown-lm-tidyr-kable
+categories: 
+  - R
+  - Rmarkdown
+tags:
+  - Rmarkdown
+  - kable
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-options(tinytex.clean = FALSE)
+knitr::opts_chunk$set(cache = TRUE, warning = FALSE, message = FALSE, 
+                      echo = TRUE, dpi = 300, cache.lazy = FALSE,
+                      tidy = "styler", fig.width = 8, fig.height = 5)
 ```
 
 ## Fit the model
@@ -26,7 +29,7 @@ lmfit
 
 ## Cleanup model output and format table
 
-Use \texttt{broom}'s \texttt{tidy} function to create a data frame of the model output and output that dataframe using \texttt{knitr}'s \texttt{kable} function: 
+Use broom's tidy function to create a data frame of the model output and output that dataframe using knitr's kable function: 
 
 ```{r output}
 library(broom)        # tidyr
@@ -38,4 +41,4 @@ tidy(lmfit) %>% kable(format="latex",booktabs=TRUE,
                       caption="My table caption",digits=2) %>% 
                 kable_styling(latex_options = "HOLD_position")
 ```
-\raggedright Add \texttt{longtable} to \texttt{kable} as required. For example: \par\texttt{kable(longtable=TRUE, format="latex", booktabs=TRUE, caption="My table caption")}
+Add longtable} to kable as required. For example: kable(longtable=TRUE, format="latex", booktabs=TRUE, caption="My table caption")
