@@ -462,6 +462,40 @@ Clone the hugo repositoryGo into the repoRun hugo in server mode and build the
 </article>
 
   
+    <article>
+  <header>
+    <h2><a href="/post/ex179/">TeX.SE</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>01 Jan 0001, 00:00</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+  </header>
+
+  <p>
+  Fit the modellmfit &lt;- lm(mpg ~ wt, mtcars)lmfit## ## Call:## lm(formula = mpg ~ wt, data = mtcars)## ## Coefficients:## (Intercept) wt ## 37.285 -5.344Cleanup model output and format tableUse ’s function to create a data frame of the model output and output that dataframe using ’s function:
+library(broom) # tidyrlibrary(magrittr) # %&gt;%library(knitr) # kablelibrary(kableExtra) # kable_stylingtidy(lmfit) %&gt;% kable(format=&quot;latex&quot;,booktabs=TRUE,caption=&quot;My table caption&quot;,digits=2) %&gt;% kable_styling(latex_options = &quot;HOLD_position&quot;)Add to as required.
+  </p>
+
+  
+  <footer>
+    <a href="/post/ex179/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
 
   
 

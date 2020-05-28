@@ -1,0 +1,41 @@
+---
+title: "Hello Blog in R"
+author: "Ross Gilmour"
+date: 2020-05-28T21:13:14-05:00
+categories: ["R"]
+tags: ["R Markdown", "Rmd", "knitr"]
+output: 
+   html_document:
+     keep_tex: true
+header-includes:
+   - \usepackage{caption}
+   - \usepackage{booktabs}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(tinytex.clean = FALSE)
+```
+
+## Fit the model
+
+```{r cars}
+lmfit <- lm(mpg ~ wt, mtcars)
+lmfit
+```
+
+## Cleanup model output and format table
+
+Use \texttt{broom}'s \texttt{tidy} function to create a data frame of the model output and output that dataframe using \texttt{knitr}'s \texttt{kable} function: 
+
+```{r output}
+library(broom)        # tidyr
+library(magrittr)     # %>%
+
+library(knitr)        # kable
+library(kableExtra)   # kable_styling
+tidy(lmfit) %>% kable(format="latex",booktabs=TRUE,
+                      caption="My table caption",digits=2) %>% 
+                kable_styling(latex_options = "HOLD_position")
+```
+\raggedright Add \texttt{longtable} to \texttt{kable} as required. For example: \par\texttt{kable(longtable=TRUE, format="latex", booktabs=TRUE, caption="My table caption")}

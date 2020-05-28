@@ -68,5 +68,15 @@ Follow the following steps:
 Clone the hugo repositoryGo into the repoRun hugo in server mode and build the docsOpen your browser to http://localhost:1313Corresponding pseudo commands:</description>
     </item>
     
+    <item>
+      <title>TeX.SE</title>
+      <link>/post/ex179/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/ex179/</guid>
+      <description>Fit the modellmfit &amp;lt;- lm(mpg ~ wt, mtcars)lmfit## ## Call:## lm(formula = mpg ~ wt, data = mtcars)## ## Coefficients:## (Intercept) wt ## 37.285 -5.344Cleanup model output and format tableUse ’s function to create a data frame of the model output and output that dataframe using ’s function:
+library(broom) # tidyrlibrary(magrittr) # %&amp;gt;%library(knitr) # kablelibrary(kableExtra) # kable_stylingtidy(lmfit) %&amp;gt;% kable(format=&amp;quot;latex&amp;quot;,booktabs=TRUE,caption=&amp;quot;My table caption&amp;quot;,digits=2) %&amp;gt;% kable_styling(latex_options = &amp;quot;HOLD_position&amp;quot;)Add to as required.</description>
+    </item>
+    
   </channel>
 </rss>
