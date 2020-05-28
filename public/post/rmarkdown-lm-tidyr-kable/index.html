@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.71.0" />
 
-  <title>Getting Started with Hugo &middot; Galileo Consulting</title>
+  <title>Hello Blog in R &middot; Galileo Consulting</title>
 
     
 
@@ -224,7 +224,7 @@
 
 
 <div class="header">
-  <h1>Getting Started with Hugo</h1>
+  <h1>Hello Blog in R</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -233,7 +233,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>02 Apr 2014, 00:00</time>
+    <time>28 May 2020, 00:00</time>
   </div>
 
   
@@ -246,13 +246,9 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="/tags/go">go</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="/tags/rmarkdown">Rmarkdown</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="/tags/golang">golang</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="/tags/hugo">hugo</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="/tags/development">development</a>
+      <a class="post-taxonomy-tag" href="/tags/kable">kable</a>
     
   </div>
   
@@ -263,80 +259,47 @@
   
 
 
-<div id="step-1.-install-hugo" class="section level2">
-<h2>Step 1. Install Hugo</h2>
-<p>Goto <a href="https://github.com/spf13/hugo/releases">hugo releases</a> and download the
-appropriate version for your os and architecture.</p>
-<p>Save it somewhere specific as we will be using it in the next step.</p>
-<p>More complete instructions are available at <a href="/overview/installing/">installing hugo</a></p>
+<div id="fit-the-model" class="section level2">
+<h2>Fit the model</h2>
+<pre class="r"><code>lmfit &lt;- lm(mpg ~ wt, mtcars)
+lmfit</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = mpg ~ wt, data = mtcars)
+## 
+## Coefficients:
+## (Intercept)           wt  
+##      37.285       -5.344</code></pre>
 </div>
-<div id="step-2.-build-the-docs" class="section level2">
-<h2>Step 2. Build the Docs</h2>
-<p>Hugo has its own example site which happens to also be the documentation site
-you are reading right now.</p>
-<p>Follow the following steps:</p>
-<ol style="list-style-type: decimal">
-<li>Clone the <a href="http://github.com/spf13/hugo">hugo repository</a></li>
-<li>Go into the repo</li>
-<li>Run hugo in server mode and build the docs</li>
-<li>Open your browser to <a href="http://localhost:1313" class="uri">http://localhost:1313</a></li>
-</ol>
-<p>Corresponding pseudo commands:</p>
-<pre><code>git clone https://github.com/spf13/hugo
-cd hugo
-/path/to/where/you/installed/hugo server --source=./docs
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Press ctrl+c to stop</code></pre>
-<p>Once you’ve gotten here, follow along the rest of this page on your local build.</p>
-</div>
-<div id="step-3.-change-the-docs-site" class="section level2">
-<h2>Step 3. Change the docs site</h2>
-<p>Stop the Hugo process by hitting ctrl+c.</p>
-<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
-<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
-&gt; Press ctrl+c to stop</code></pre>
-<p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
-content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
-<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
-are located at the same relative location as the url, in our case
-<code>docs/content/overview/quickstart.md</code>.</p>
-<p>Change and save this file.. Notice what happened in your terminal.</p>
-<pre><code>&gt; Change detected, rebuilding site
+<div id="cleanup-model-output-and-format-table" class="section level2">
+<h2>Cleanup model output and format table</h2>
+<p>Use broom’s tidy function to create a data frame of the model output and output that dataframe using knitr’s kable function:</p>
+<pre class="r"><code>library(broom)        # tidyr
+library(magrittr)     # %&gt;%
 
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 26 ms</code></pre>
-<p>Refresh the browser and observe that the typo is now fixed.</p>
-<p>Notice how quick that was. Try to refresh the site before it’s finished building.. I double dare you.
-Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
-</div>
-<div id="step-4.-have-fun" class="section level2">
-<h2>Step 4. Have fun</h2>
-<p>The best way to learn something is to play with it.</p>
+library(knitr)        # kable
+library(kableExtra)   # kable_styling
+tidy(lmfit) %&gt;% kable(format=&quot;latex&quot;,booktabs=TRUE,
+                      caption=&quot;My table caption&quot;,digits=2) %&gt;% 
+                kable_styling(latex_options = &quot;HOLD_position&quot;)</code></pre>
+
+<p>Add longtable} to kable as required. For example: kable(longtable=TRUE, format=“latex”, booktabs=TRUE, caption=“My table caption”)</p>
 </div>
 
   
   <h4><i class="fa-share-alt" aria-hidden="true"></i>&nbsp;Share!</h4>
 <ul class="share-buttons">
-	<li><a href="https://www.facebook.com/sharer/sharer.php?u=%2fpost%2fhugoisforlovers%2f" target="_blank" title="Share on Facebook"><i class="fa-facebook" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a>
+	<li><a href="https://www.facebook.com/sharer/sharer.php?u=%2fpost%2frmarkdown-lm-tidyr-kable%2f" target="_blank" title="Share on Facebook"><i class="fa-facebook" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="https://twitter.com/intent/tweet?source=%2fpost%2fhugoisforlovers%2f&via=HorribleGeek" target="_blank" title="Tweet"><i class="fa-twitter" aria-hidden="true"></i><span class="sr-only">Tweet</span></a>
+	<li><a href="https://twitter.com/intent/tweet?source=%2fpost%2frmarkdown-lm-tidyr-kable%2f&via=HorribleGeek" target="_blank" title="Tweet"><i class="fa-twitter" aria-hidden="true"></i><span class="sr-only">Tweet</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="https://plus.google.com/share?url=%2fpost%2fhugoisforlovers%2f" target="_blank" title="Share on Google+"><i class="fa-google-plus" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a>
+	<li><a href="https://plus.google.com/share?url=%2fpost%2frmarkdown-lm-tidyr-kable%2f" target="_blank" title="Share on Google+"><i class="fa-google-plus" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://www.tumblr.com/share?v=3&u=%2fpost%2fhugoisforlovers%2f" target="_blank" title="Post to Tumblr"><i class="fa-tumblr" aria-hidden="true"></i><span class="sr-only">Post to Tumblr</span></a>
+	<li><a href="http://www.tumblr.com/share?v=3&u=%2fpost%2frmarkdown-lm-tidyr-kable%2f" target="_blank" title="Post to Tumblr"><i class="fa-tumblr" aria-hidden="true"></i><span class="sr-only">Post to Tumblr</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://pinterest.com/pin/create/button/?url=%2fpost%2fhugoisforlovers%2f" target="_blank" title="Pin it"><i class="fa-pinterest-p" aria-hidden="true"></i><span class="sr-only">Pin it</span></a>
+	<li><a href="http://pinterest.com/pin/create/button/?url=%2fpost%2frmarkdown-lm-tidyr-kable%2f" target="_blank" title="Pin it"><i class="fa-pinterest-p" aria-hidden="true"></i><span class="sr-only">Pin it</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://www.reddit.com/submit?url=%2fpost%2fhugoisforlovers%2f" target="_blank" title="Submit to Reddit"><i class="fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Submit to Reddit</span></a>
+	<li><a href="http://www.reddit.com/submit?url=%2fpost%2frmarkdown-lm-tidyr-kable%2f" target="_blank" title="Submit to Reddit"><i class="fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Submit to Reddit</span></a>
 	</li>
 </ul>
 
@@ -368,8 +331,14 @@ Having nearly instant feedback enables you to have your creativity flow without 
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
+    <a href="/post/2015-07-23-r-rmarkdown/"><i class="fa fa-chevron-left"></i></a>
+    
   </div>
   <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/post/2015-07-23-r-rmarkdown/">Hello R Markdown</a>
+    </nav>
     
   </div>
   <div class="pure-u-2-24">
@@ -378,13 +347,13 @@ Having nearly instant feedback enables you to have your creativity flow without 
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="/post/goisforlovers/">(Hu)go Template Primer</a>
+      <a href="/post/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="/post/goisforlovers/"><i class="fa fa-chevron-right"></i></a>
+    <a href="/post/migrate-from-jekyll/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

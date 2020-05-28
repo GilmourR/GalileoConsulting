@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -31,6 +31,15 @@ We’ll start with creating a new site with a very basic template.</description>
       <description>Move static content to staticJekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there.With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/▾ images/logo.pngshould become
 ▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.pngAdditionally, you’ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>Hello Blog in R</title>
+      <link>/post/rmarkdown-lm-tidyr-kable/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rmarkdown-lm-tidyr-kable/</guid>
+      <description>This shows how to run lm, tidy the output and format it for publication</description>
     </item>
     
     <item>
@@ -66,16 +75,6 @@ More complete instructions are available at installing hugo
 Step 2. Build the DocsHugo has its own example site which happens to also be the documentation siteyou are reading right now.
 Follow the following steps:
 Clone the hugo repositoryGo into the repoRun hugo in server mode and build the docsOpen your browser to http://localhost:1313Corresponding pseudo commands:</description>
-    </item>
-    
-    <item>
-      <title>TeX.SE</title>
-      <link>/post/ex179/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/ex179/</guid>
-      <description>Fit the modellmfit &amp;lt;- lm(mpg ~ wt, mtcars)lmfit## ## Call:## lm(formula = mpg ~ wt, data = mtcars)## ## Coefficients:## (Intercept) wt ## 37.285 -5.344Cleanup model output and format tableUse ’s function to create a data frame of the model output and output that dataframe using ’s function:
-library(broom) # tidyrlibrary(magrittr) # %&amp;gt;%library(knitr) # kablelibrary(kableExtra) # kable_stylingtidy(lmfit) %&amp;gt;% kable(format=&amp;quot;latex&amp;quot;,booktabs=TRUE,caption=&amp;quot;My table caption&amp;quot;,digits=2) %&amp;gt;% kable_styling(latex_options = &amp;quot;HOLD_position&amp;quot;)Add to as required.</description>
     </item>
     
   </channel>
