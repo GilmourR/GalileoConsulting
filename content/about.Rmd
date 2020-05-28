@@ -10,12 +10,14 @@ Galileo Consulting has deep capabilities in innovation and technology management
 ## Scope
 
 We undertake engagements related to:
+
 * product development and commercialization;
 * business case analysis; 
 * technology valuation; and
 * writing and editing technical reports
 
 Our strong quantitative skills in R and Excel attracts work:
+
 * designing experiments and analysing the results
 * building machine learning models
 
