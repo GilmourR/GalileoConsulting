@@ -1,0 +1,22 @@
+---
+date: "2020-05-28"
+description: About Galileo Consulting
+sidemenu: "true"
+title: About
+---
+
+Galileo Consulting has deep capabilities in innovation and technology management, particularly in the fields of agriculture, biotechnology and chemicals.
+
+## Scope
+
+We undertake engagements related to:
+* product development and commercialization;
+* business case analysis; 
+* technology valuation; and
+* writing and editing technical reports
+
+Our strong quantitative skills in R and Excel attracts work:
+* designing experiments and analysing the results
+* building machine learning models
+
+We participate in dispute resolutions as arbitrators or expert witnesses.

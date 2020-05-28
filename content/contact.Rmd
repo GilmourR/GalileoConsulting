@@ -1,9 +1,13 @@
 ---
-date: "2014-04-09"
+date: "2020-05-28"
 description: How to contact me
 sidemenu: "true"
 title: Contact
 ---
+
+Write to me at: ross@galileoconsulting.my or complete this form:
+
+## Contact form
 
 <form class="pure-form pure-form-stacked">
   <fieldset>
