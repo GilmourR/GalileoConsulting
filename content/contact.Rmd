@@ -5,10 +5,6 @@ sidemenu: "true"
 title: Contact
 ---
 
-Write to me at: ross@galileoconsulting.my or complete this form:
-
-## Contact form
-
 <form class="pure-form pure-form-stacked">
   <fieldset>
     <div class="pure-g">
