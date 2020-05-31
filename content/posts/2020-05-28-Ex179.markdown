@@ -1,0 +1,70 @@
+---
+title: "Hello Blog in R"
+subtitle: "This is a test"
+summary: "This shows how to run lm, tidy the output and format it for publication"
+
+author: "Ross Gilmour"
+date: "2020-05-28"
+slug: rmarkdown-lm-tidyr-kable
+categories: 
+  - R
+  - Rmarkdown
+tags:
+  - Rmarkdown
+  - kable
+---
+
+
+
+## Fit the model
+
+
+```r
+lmfit <- lm(mpg ~ wt, mtcars)
+lmfit
+```
+
+```
+## 
+## Call:
+## lm(formula = mpg ~ wt, data = mtcars)
+## 
+## Coefficients:
+## (Intercept)           wt  
+##      37.285       -5.344
+```
+
+## Cleanup model output and format table
+
+Use "broom"'s "tidy" function to create a data frame of the model output and output that dataframe using "knitr"'s "kable" function: 
+
+
+```r
+library(broom) # tidyr
+library(magrittr) # %>%
+
+library(knitr) # kable
+library(kableExtra) # kable_styling
+mytable <- tidy(lmfit) %>%
+  kable(
+    format = "latex", booktabs = TRUE,
+    caption = "My table caption", digits = 2
+  ) %>%
+  kable_styling(latex_options = "HOLD_position")
+mytable
+```
+
+\begin{table}[H]
+
+\caption{(\#tab:output)My table caption}
+\centering
+\begin{tabular}[t]{lrrrr}
+\toprule
+term & estimate & std.error & statistic & p.value\\
+\midrule
+(Intercept) & 37.29 & 1.88 & 19.86 & 0\\
+wt & -5.34 & 0.56 & -9.56 & 0\\
+\bottomrule
+\end{tabular}`
+\end{table}`
+Add "longtable" to "kable" as required. For example: "kable(longtable=TRUE, format="latex", booktabs=TRUE, caption="My table caption")"

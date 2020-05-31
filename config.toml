@@ -64,11 +64,17 @@ footnotereturnlinkcontents = "<sup>^</sup>"
     identifier = "home"
     url = "/"
   [[menu.main]]
+    name = "Agriculture"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/Agriculture/"
+  [[menu.main]]
     name = "Posts"
     pre = "<i class='fa fa-list fa-fw'></i>"
     weight = 2
-    identifier = "post"
-    url = "/post/"
+    identifier = "Posts"
+    url = "/Posts/"
   [[menu.main]]
     name = "About"
     pre = "<i class='fa fa-user fa-fw'></i>"
