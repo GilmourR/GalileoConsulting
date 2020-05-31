@@ -14,10 +14,10 @@
     
     <item>
       <title>Hello Blog in R</title>
-      <link>https://galileoconsulting.my/post/rmarkdown-lm-tidyr-kable/</link>
+      <link>https://galileoconsulting.my/r/rmarkdown-lm-tidyr-kable/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://galileoconsulting.my/post/rmarkdown-lm-tidyr-kable/</guid>
+      <guid>https://galileoconsulting.my/r/rmarkdown-lm-tidyr-kable/</guid>
       <description>This shows how to run lm, tidy the output and format it for publication</description>
     </item>
     

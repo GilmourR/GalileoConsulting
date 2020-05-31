@@ -4,10 +4,10 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="How to contact me">
+  <meta name="description" content="">
   <meta name="generator" content="Hugo 0.71.0" />
 
-  <title>Contact &middot; Galileo Consulting</title>
+  <title>Hello R Markdown &middot; Galileo Consulting</title>
 
     
 
@@ -208,42 +208,40 @@
 
 
 <div class="header">
-  <h1>Contact</h1>
-  <h2>How to contact me</h2>
+  <h1>Hello R Markdown</h1>
+  <h2></h2>
 </div>
 <div class="content">
-  <!-- raw HTML omitted -->
-<pre><code>  &lt;div class=&quot;pure-u-1 pure-u-md-1-3&quot;&gt;
-    &lt;label for=&quot;last-name&quot;&gt;Last Name&lt;/label&gt;
-    &lt;input id=&quot;last-name&quot; class=&quot;pure-u-23-24&quot; type=&quot;text&quot;&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;pure-u-1 pure-u-md-1-3&quot;&gt;
-    &lt;label for=&quot;email&quot;&gt;E-Mail&lt;/label&gt;
-    &lt;input id=&quot;email&quot; class=&quot;pure-u-23-24&quot; type=&quot;email&quot; required&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;pure-u-1 pure-u-md-1-3&quot;&gt;
-    &lt;label for=&quot;city&quot;&gt;City&lt;/label&gt;
-    &lt;input id=&quot;city&quot; class=&quot;pure-u-23-24&quot; type=&quot;text&quot;&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;pure-u-1 pure-u-md-1-3&quot;&gt;
-    &lt;label for=&quot;state&quot;&gt;State&lt;/label&gt;
-    &lt;select id=&quot;state&quot; class=&quot;pure-input-1-2&quot;&gt;
-      &lt;option&gt;AL&lt;/option&gt;
-      &lt;option&gt;CA&lt;/option&gt;
-      &lt;option&gt;IL&lt;/option&gt;
-    &lt;/select&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;fieldset class=&quot;pure-group&quot;&gt;
-  &lt;input type=&quot;text&quot; class=&quot;pure-input-1-2&quot; placeholder=&quot;A title&quot;&gt;
-  &lt;textarea class=&quot;pure-input-1-2&quot; placeholder=&quot;Your message&quot;&gt;&lt;/textarea&gt;
-&lt;/fieldset&gt;
-&lt;button type=&quot;submit&quot; class=&quot;pure-button pure-button-primary&quot;&gt;Send&lt;/button&gt;
-</code></pre>
-<!-- raw HTML omitted -->
+  <h1 id="r-markdown">R Markdown</h1>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com">http://rmarkdown.rstudio.com</a>.</p>
+<p>You can embed an R code chunk like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">summary</span>(cars)
+<span style="color:#75715e">##      speed           dist       </span>
+<span style="color:#75715e">##  Min.   : 4.0   Min.   :  2.00  </span>
+<span style="color:#75715e">##  1st Qu.:12.0   1st Qu.: 26.00  </span>
+<span style="color:#75715e">##  Median :15.0   Median : 36.00  </span>
+<span style="color:#75715e">##  Mean   :15.4   Mean   : 42.98  </span>
+<span style="color:#75715e">##  3rd Qu.:19.0   3rd Qu.: 56.00  </span>
+<span style="color:#75715e">##  Max.   :25.0   Max.   :120.00</span>
+fit <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(dist <span style="color:#f92672">~</span> speed, data <span style="color:#f92672">=</span> cars)
+fit
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Call:</span>
+<span style="color:#75715e">## lm(formula = dist ~ speed, data = cars)</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Coefficients:</span>
+<span style="color:#75715e">## (Intercept)        speed  </span>
+<span style="color:#75715e">##     -17.579        3.932</span>
+</code></pre></div><h1 id="including-plots">Including Plots</h1>
+<p>You can also embed plots. See Figure <!-- raw HTML omitted -->1<!-- raw HTML omitted --> for example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">par</span>(mar <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>))
+<span style="color:#a6e22e">pie</span>(
+  <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">280</span>, <span style="color:#ae81ff">60</span>, <span style="color:#ae81ff">20</span>),
+  <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#39;Sky&#39;</span>, <span style="color:#e6db74">&#39;Sunny side of pyramid&#39;</span>, <span style="color:#e6db74">&#39;Shady side of pyramid&#39;</span>),
+  col <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#39;#0292D8&#39;</span>, <span style="color:#e6db74">&#39;#F7EA39&#39;</span>, <span style="color:#e6db74">&#39;#C4B632&#39;</span>),
+  init.angle <span style="color:#f92672">=</span> <span style="color:#ae81ff">-50</span>, border <span style="color:#f92672">=</span> <span style="color:#66d9ef">NA</span>
+)
+</code></pre></div><!-- raw HTML omitted -->
 
 </div>
 

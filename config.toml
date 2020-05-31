@@ -73,8 +73,8 @@ footnotereturnlinkcontents = "<sup>^</sup>"
     name = "Posts"
     pre = "<i class='fa fa-list fa-fw'></i>"
     weight = 2
-    identifier = "R"
-    url = "/R/"
+    identifier = "Posts"
+    url = "/Posts/"
   [[menu.main]]
     name = "About"
     pre = "<i class='fa fa-user fa-fw'></i>"
