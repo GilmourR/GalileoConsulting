@@ -1,9 +1,7 @@
 ---
-date: "2020-05-28"
-title: About Galileo Consulting
-#description: 
-sidemenu: "true"
-
+title: "About Galileo Consulting"
+date: '2020-05-28'
+sidemenu: 'true'
 ---
 
 Galileo Consulting has deep capabilities in innovation and technology management, particularly in the fields of agriculture, biotechnology and chemicals.
