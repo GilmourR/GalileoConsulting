@@ -3,67 +3,77 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/about/</loc>
+    <loc>https://galileoconsulting.my/tag/agriculture/</loc>
+    <lastmod>2020-05-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://galileoconsulting.my/post/innovation-and-technology-management-home/</loc>
+    <lastmod>2020-05-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://galileoconsulting.my/post/</loc>
+    <lastmod>2020-05-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://galileoconsulting.my/tags/</loc>
+    <lastmod>2020-05-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://galileoconsulting.my/about/</loc>
     <lastmod>2020-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/contact/</loc>
+    <loc>https://galileoconsulting.my/contact/</loc>
     <lastmod>2020-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://galileoconsulting.my/</loc>
     <lastmod>2020-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/rmarkdown-lm-tidyr-kable/</loc>
+    <loc>https://galileoconsulting.my/post/rmarkdown-lm-tidyr-kable/</loc>
     <lastmod>2020-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/kable/</loc>
+    <loc>https://galileoconsulting.my/tag/kable/</loc>
     <lastmod>2020-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://galileoconsulting.my/tag/rmarkdown/</loc>
     <lastmod>2020-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/rmarkdown/</loc>
-    <lastmod>2020-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/2015-07-23-r-rmarkdown/</loc>
+    <loc>https://galileoconsulting.my/post/2015-07-23-r-rmarkdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/plot/</loc>
+    <loc>https://galileoconsulting.my/tag/plot/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/r-markdown/</loc>
+    <loc>https://galileoconsulting.my/tag/r-markdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/regression/</loc>
+    <loc>https://galileoconsulting.my/tag/regression/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/topics/</loc>
+    <loc>https://galileoconsulting.my/topics/</loc>
   </url>
   
 </urlset>

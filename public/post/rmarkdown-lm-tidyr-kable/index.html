@@ -23,13 +23,13 @@
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <link rel="stylesheet" href="https://galileoconsulting.my/css/side-menu-old-ie.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="/css/side-menu.css">
+  <link rel="stylesheet" href="https://galileoconsulting.my/css/side-menu.css">
   <!--<![endif]-->
 
-  <link rel="stylesheet" href="/css/blackburn.css">
+  <link rel="stylesheet" href="https://galileoconsulting.my/css/blackburn.css">
 
   
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
@@ -50,7 +50,7 @@
   <script>hljs.initHighlightingOnLoad();</script>
   
 
-  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://galileoconsulting.my/img/favicon.ico" type="image/x-icon" />
 
   
   
@@ -69,7 +69,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">Galileo</a>
+  <a class="pure-menu-heading brand" href="https://galileoconsulting.my/">Galileo</a>
 
 
   <div class="pure-menu">
@@ -77,25 +77,25 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://galileoconsulting.my/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+          <a class="pure-menu-link" href="https://galileoconsulting.my/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+          <a class="pure-menu-link" href="https://galileoconsulting.my/about/"><i class='fa fa-user fa-fw'></i>About</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+          <a class="pure-menu-link" href="https://galileoconsulting.my/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
       
         </li>
       
@@ -230,9 +230,9 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="/tags/rmarkdown">Rmarkdown</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://galileoconsulting.my/tags/rmarkdown">Rmarkdown</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="/tags/kable">kable</a>
+      <a class="post-taxonomy-tag" href="https://galileoconsulting.my/tags/kable">kable</a>
     
   </div>
   
@@ -240,54 +240,57 @@
 
 </div>
 
-  
-
-
-<div id="fit-the-model" class="section level2">
-<h2>Fit the model</h2>
-<pre class="r"><code>lmfit &lt;- lm(mpg ~ wt, mtcars)
-lmfit</code></pre>
-<pre><code>## 
+  <h2 id="fit-the-model">Fit the model</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">lmfit <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(mpg <span style="color:#f92672">~</span> wt, mtcars)
+lmfit
+</code></pre></div><pre><code>## 
 ## Call:
 ## lm(formula = mpg ~ wt, data = mtcars)
 ## 
 ## Coefficients:
 ## (Intercept)           wt  
-##      37.285       -5.344</code></pre>
-</div>
-<div id="cleanup-model-output-and-format-table" class="section level2">
-<h2>Cleanup model output and format table</h2>
-<p>Use “broom”’s “tidy” function to create a data frame of the model output and output that dataframe using “knitr”’s “kable” function:</p>
-<pre class="r"><code>library(broom) # tidyr
-library(magrittr) # %&gt;%
+##      37.285       -5.344
+</code></pre><h2 id="cleanup-model-output-and-format-table">Cleanup model output and format table</h2>
+<p>Use &ldquo;broom&rdquo;&lsquo;s &ldquo;tidy&rdquo; function to create a data frame of the model output and output that dataframe using &ldquo;knitr&rdquo;&lsquo;s &ldquo;kable&rdquo; function:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(broom) <span style="color:#75715e"># tidyr</span>
+<span style="color:#a6e22e">library</span>(magrittr) <span style="color:#75715e"># %&gt;%</span>
 
-library(knitr) # kable
-library(kableExtra) # kable_styling
-mytable &lt;- tidy(lmfit) %&gt;%
-  kable(
-    format = &quot;latex&quot;, booktabs = TRUE,
-    caption = &quot;My table caption&quot;, digits = 2
-  ) %&gt;%
-  kable_styling(latex_options = &quot;HOLD_position&quot;)
-mytable</code></pre>
-
-<p>Add “longtable” to “kable” as required. For example: “kable(longtable=TRUE, format=”latex“, booktabs=TRUE, caption=”My table caption“)”</p>
-</div>
+<span style="color:#a6e22e">library</span>(knitr) <span style="color:#75715e"># kable</span>
+<span style="color:#a6e22e">library</span>(kableExtra) <span style="color:#75715e"># kable_styling</span>
+mytable <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">tidy</span>(lmfit) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">kable</span>(
+    format <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;latex&#34;</span>, booktabs <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>,
+    caption <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;My table caption&#34;</span>, digits <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+  ) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">kable_styling</span>(latex_options <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;HOLD_position&#34;</span>)
+mytable
+</code></pre></div><p>\begin{table}[H]</p>
+<p>\caption{(#tab:output)My table caption}
+\centering
+\begin{tabular}[t]{lrrrr}
+\toprule
+term &amp; estimate &amp; std.error &amp; statistic &amp; p.value\<br>
+\midrule
+(Intercept) &amp; 37.29 &amp; 1.88 &amp; 19.86 &amp; 0\<br>
+wt &amp; -5.34 &amp; 0.56 &amp; -9.56 &amp; 0\<br>
+\bottomrule
+\end{tabular}<code>\end{table}</code>
+Add &ldquo;longtable&rdquo; to &ldquo;kable&rdquo; as required. For example: &ldquo;kable(longtable=TRUE, format=&quot;latex&rdquo;, booktabs=TRUE, caption=&quot;My table caption&rdquo;)&rdquo;</p>
 
   
   <h4><i class="fa-share-alt" aria-hidden="true"></i>&nbsp;Share!</h4>
 <ul class="share-buttons">
-	<li><a href="https://www.facebook.com/sharer/sharer.php?u=%2fpost%2frmarkdown-lm-tidyr-kable%2f" target="_blank" title="Share on Facebook"><i class="fa-facebook" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a>
+	<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fgalileoconsulting.my%2fpost%2frmarkdown-lm-tidyr-kable%2f" target="_blank" title="Share on Facebook"><i class="fa-facebook" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="https://twitter.com/intent/tweet?source=%2fpost%2frmarkdown-lm-tidyr-kable%2f&via=HorribleGeek" target="_blank" title="Tweet"><i class="fa-twitter" aria-hidden="true"></i><span class="sr-only">Tweet</span></a>
+	<li><a href="https://twitter.com/intent/tweet?source=https%3a%2f%2fgalileoconsulting.my%2fpost%2frmarkdown-lm-tidyr-kable%2f&via=HorribleGeek" target="_blank" title="Tweet"><i class="fa-twitter" aria-hidden="true"></i><span class="sr-only">Tweet</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="https://plus.google.com/share?url=%2fpost%2frmarkdown-lm-tidyr-kable%2f" target="_blank" title="Share on Google+"><i class="fa-google-plus" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a>
+	<li><a href="https://plus.google.com/share?url=https%3a%2f%2fgalileoconsulting.my%2fpost%2frmarkdown-lm-tidyr-kable%2f" target="_blank" title="Share on Google+"><i class="fa-google-plus" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://www.tumblr.com/share?v=3&u=%2fpost%2frmarkdown-lm-tidyr-kable%2f" target="_blank" title="Post to Tumblr"><i class="fa-tumblr" aria-hidden="true"></i><span class="sr-only">Post to Tumblr</span></a>
+	<li><a href="http://www.tumblr.com/share?v=3&u=https%3a%2f%2fgalileoconsulting.my%2fpost%2frmarkdown-lm-tidyr-kable%2f" target="_blank" title="Post to Tumblr"><i class="fa-tumblr" aria-hidden="true"></i><span class="sr-only">Post to Tumblr</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://pinterest.com/pin/create/button/?url=%2fpost%2frmarkdown-lm-tidyr-kable%2f" target="_blank" title="Pin it"><i class="fa-pinterest-p" aria-hidden="true"></i><span class="sr-only">Pin it</span></a>
+	<li><a href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fgalileoconsulting.my%2fpost%2frmarkdown-lm-tidyr-kable%2f" target="_blank" title="Pin it"><i class="fa-pinterest-p" aria-hidden="true"></i><span class="sr-only">Pin it</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://www.reddit.com/submit?url=%2fpost%2frmarkdown-lm-tidyr-kable%2f" target="_blank" title="Submit to Reddit"><i class="fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Submit to Reddit</span></a>
+	<li><a href="http://www.reddit.com/submit?url=https%3a%2f%2fgalileoconsulting.my%2fpost%2frmarkdown-lm-tidyr-kable%2f" target="_blank" title="Submit to Reddit"><i class="fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Submit to Reddit</span></a>
 	</li>
 </ul>
 
@@ -319,13 +322,13 @@ mytable</code></pre>
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="/post/2015-07-23-r-rmarkdown/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://galileoconsulting.my/post/2015-07-23-r-rmarkdown/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="/post/2015-07-23-r-rmarkdown/">Hello R Markdown</a>
+      <a href="https://galileoconsulting.my/post/2015-07-23-r-rmarkdown/">Hello R Markdown</a>
     </nav>
     
   </div>
@@ -334,8 +337,14 @@ mytable</code></pre>
   </div>
   <div class="pure-u-10-24">
     
+    <nav class="next">
+      <a href="https://galileoconsulting.my/post/innovation-and-technology-management-home/">Innovation and Technology Management in Agriculture, Biotechnology and Chemicals</a>
+    </nav>
+    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://galileoconsulting.my/post/innovation-and-technology-management-home/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
@@ -366,8 +375,8 @@ mytable</code></pre>
 
 </div>
 </div>
-<script src="/js/ui.js"></script>
-<script src="/js/menus.js"></script>
+<script src="https://galileoconsulting.my/js/ui.js"></script>
+<script src="https://galileoconsulting.my/js/menus.js"></script>
 
 
 <script>
@@ -387,6 +396,9 @@ mytable</code></pre>
 
 
 
+<script src="https://galileoconsulting.my/js/math-code.js"></script>
+  <script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
 
 
 </body>

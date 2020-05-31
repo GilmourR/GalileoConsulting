@@ -2,22 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Galileo Consulting</title>
-    <link>/</link>
+    <link>https://galileoconsulting.my/</link>
     <description>Recent content on Galileo Consulting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
     <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://galileoconsulting.my/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Innovation and Technology Management in Agriculture, Biotechnology and Chemicals</title>
+      <link>https://galileoconsulting.my/post/innovation-and-technology-management-home/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://galileoconsulting.my/post/innovation-and-technology-management-home/</guid>
+      <description>Food supply securityThree technologies are key to ensuring security of food supply: seeds, fertilizers and crop protection chemicals.
+Society demands that each are used in ways that result in no adverse environmental impacts.</description>
+    </item>
+    
+    <item>
       <title>About Galileo Consulting</title>
-      <link>/about/</link>
+      <link>https://galileoconsulting.my/about/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://galileoconsulting.my/about/</guid>
       <description>Galileo Consulting has deep capabilities in innovation and technology management, particularly in the fields of agriculture, biotechnology and chemicals.
 ScopeWe undertake engagements related to:
 product development and commercialization;business case analysis;technology valuation; andwriting and editing technical reportsOur strong quantitative skills in R and Excel attracts work:</description>
@@ -25,29 +35,29 @@ ScopeWe undertake engagements related to:
     
     <item>
       <title>Contact</title>
-      <link>/contact/</link>
+      <link>https://galileoconsulting.my/contact/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/contact/</guid>
+      <guid>https://galileoconsulting.my/contact/</guid>
       <description> &amp;lt;div class=&amp;quot;pure-u-1 pure-u-md-1-3&amp;quot;&amp;gt;&amp;lt;label for=&amp;quot;last-name&amp;quot;&amp;gt;Last Name&amp;lt;/label&amp;gt;&amp;lt;input id=&amp;quot;last-name&amp;quot; class=&amp;quot;pure-u-23-24&amp;quot; type=&amp;quot;text&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&amp;quot;pure-u-1 pure-u-md-1-3&amp;quot;&amp;gt;&amp;lt;label for=&amp;quot;email&amp;quot;&amp;gt;E-Mail&amp;lt;/label&amp;gt;&amp;lt;input id=&amp;quot;email&amp;quot; class=&amp;quot;pure-u-23-24&amp;quot; type=&amp;quot;email&amp;quot; required&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&amp;quot;pure-u-1 pure-u-md-1-3&amp;quot;&amp;gt;&amp;lt;label for=&amp;quot;city&amp;quot;&amp;gt;City&amp;lt;/label&amp;gt;&amp;lt;input id=&amp;quot;city&amp;quot; class=&amp;quot;pure-u-23-24&amp;quot; type=&amp;quot;text&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&amp;quot;pure-u-1 pure-u-md-1-3&amp;quot;&amp;gt;&amp;lt;label for=&amp;quot;state&amp;quot;&amp;gt;State&amp;lt;/label&amp;gt;&amp;lt;select id=&amp;quot;state&amp;quot; class=&amp;quot;pure-input-1-2&amp;quot;&amp;gt;&amp;lt;option&amp;gt;AL&amp;lt;/option&amp;gt;&amp;lt;option&amp;gt;CA&amp;lt;/option&amp;gt;&amp;lt;option&amp;gt;IL&amp;lt;/option&amp;gt;&amp;lt;/select&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;fieldset class=&amp;quot;pure-group&amp;quot;&amp;gt;&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;pure-input-1-2&amp;quot; placeholder=&amp;quot;A title&amp;quot;&amp;gt;&amp;lt;textarea class=&amp;quot;pure-input-1-2&amp;quot; placeholder=&amp;quot;Your message&amp;quot;&amp;gt;&amp;lt;/textarea&amp;gt;&amp;lt;/fieldset&amp;gt;&amp;lt;button type=&amp;quot;submit&amp;quot; class=&amp;quot;pure-button pure-button-primary&amp;quot;&amp;gt;Send&amp;lt;/button&amp;gt; </description>
     </item>
     
     <item>
       <title>Hello Blog in R</title>
-      <link>/post/rmarkdown-lm-tidyr-kable/</link>
+      <link>https://galileoconsulting.my/post/rmarkdown-lm-tidyr-kable/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/rmarkdown-lm-tidyr-kable/</guid>
+      <guid>https://galileoconsulting.my/post/rmarkdown-lm-tidyr-kable/</guid>
       <description>This shows how to run lm, tidy the output and format it for publication</description>
     </item>
     
     <item>
       <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <link>https://galileoconsulting.my/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.</description>
+      <guid>https://galileoconsulting.my/post/2015-07-23-r-rmarkdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.</description>
     </item>
     
   </channel>

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>kable on Galileo Consulting</title>
-    <link>/tag/kable/</link>
+    <link>https://galileoconsulting.my/tag/kable/</link>
     <description>Recent content in kable on Galileo Consulting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
     <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tag/kable/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://galileoconsulting.my/tag/kable/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello Blog in R</title>
-      <link>/post/rmarkdown-lm-tidyr-kable/</link>
+      <link>https://galileoconsulting.my/post/rmarkdown-lm-tidyr-kable/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/rmarkdown-lm-tidyr-kable/</guid>
+      <guid>https://galileoconsulting.my/post/rmarkdown-lm-tidyr-kable/</guid>
       <description>This shows how to run lm, tidy the output and format it for publication</description>
     </item>
     
