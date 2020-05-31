@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Galileo Consulting</title>
-    <link>https://galileoconsulting.my/post/</link>
-    <description>Recent content in Posts on Galileo Consulting</description>
+    <title>R Markdown on Galileo Consulting</title>
+    <link>https://galileoconsulting.my/tag/r-markdown/</link>
+    <description>Recent content in R Markdown on Galileo Consulting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
-	<atom:link href="https://galileoconsulting.my/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://galileoconsulting.my/tag/r-markdown/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Hello Blog in R</title>
-      <link>https://galileoconsulting.my/post/rmarkdown-lm-tidyr-kable/</link>
-      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://galileoconsulting.my/post/rmarkdown-lm-tidyr-kable/</guid>
-      <description>This shows how to run lm, tidy the output and format it for publication</description>
-    </item>
     
     <item>
       <title>Hello R Markdown</title>
