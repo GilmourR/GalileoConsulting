@@ -6,9 +6,11 @@
 </div>
 
 <div class="content">
-  {{ range ( .Paginate (where .Site.RegularPages "Type" "post")).Pages }}
-    {{ .Render "summary"}}
-  {{ end }}
+#  {{ range ( .Paginate (where .Site.RegularPages "Type" "post")).Pages }}
+#    {{ .Render "summary"}}
+#  {{ end }}
+
+<img src="https://github.com/GilmourR/GalileoConsulting/blob/master/static/image/RiceFieldPanoramaBulacanPhilippines.jpg" alt="" width="80%"/>
 
   {{ partial "pagination.html" . }}
 

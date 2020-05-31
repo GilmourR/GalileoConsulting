@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Galileo Consulting</title>
-    <link>https://galileoconsulting.my/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Galileo Consulting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
     <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://galileoconsulting.my/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>kable</title>
-      <link>https://galileoconsulting.my/tag/kable/</link>
+      <link>/tag/kable/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://galileoconsulting.my/tag/kable/</guid>
+      <guid>/tag/kable/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rmarkdown</title>
-      <link>https://galileoconsulting.my/tag/rmarkdown/</link>
+      <link>/tag/rmarkdown/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://galileoconsulting.my/tag/rmarkdown/</guid>
+      <guid>/tag/rmarkdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>plot</title>
-      <link>https://galileoconsulting.my/tag/plot/</link>
+      <link>/tag/plot/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>https://galileoconsulting.my/tag/plot/</guid>
+      <guid>/tag/plot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Markdown</title>
-      <link>https://galileoconsulting.my/tag/r-markdown/</link>
+      <link>/tag/r-markdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>https://galileoconsulting.my/tag/r-markdown/</guid>
+      <guid>/tag/r-markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>regression</title>
-      <link>https://galileoconsulting.my/tag/regression/</link>
+      <link>/tag/regression/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>https://galileoconsulting.my/tag/regression/</guid>
+      <guid>/tag/regression/</guid>
       <description></description>
     </item>
     
