@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Galileo Consulting</title>
+    <link>https://galileoconsulting.my/posts/</link>
+    <description>Recent content in Posts on Galileo Consulting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2020. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 31 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://galileoconsulting.my/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Innovation and Technology Management in Agriculture, Biotechnology and Chemicals</title>
+      <link>https://galileoconsulting.my/posts/innovation-and-technology-management-home/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://galileoconsulting.my/posts/innovation-and-technology-management-home/</guid>
+      <description>Food supply security Three technologies are key to ensuring security of food supply: seeds, fertilizers and crop protection chemicals.
+Society demands that each are used in ways that result in no adverse environmental impacts.</description>
+    </item>
+    
+    <item>
+      <title>Hello Blog in R</title>
+      <link>https://galileoconsulting.my/posts/rmarkdown-lm-tidyr-kable/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://galileoconsulting.my/posts/rmarkdown-lm-tidyr-kable/</guid>
+      <description>This shows how to run lm, tidy the output and format it for publication</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>https://galileoconsulting.my/posts/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>https://galileoconsulting.my/posts/2015-07-23-r-rmarkdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.</description>
+    </item>
+    
+  </channel>
+</rss>

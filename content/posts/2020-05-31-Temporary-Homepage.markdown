@@ -1,0 +1,28 @@
+---
+title: "Innovation and Technology Management in Agriculture, Biotechnology and Chemicals"
+author: "Ross Gilmour"
+date: "2020-05-31"
+slug: Innovation-And-Technology-Management-Home
+categories: 
+  - Agriculture
+tags:
+  - Agriculture
+
+---
+# Food supply security
+
+<img src="https://github.com/GilmourR/GalileoConsulting/blob/master/static/image/RiceFieldPanoramaBulacanPhilippines.jpg" alt="" width="80%"/>
+
+Three technologies are key to ensuring security of food supply: seeds, fertilizers and crop protection chemicals.
+
+Society demands that each are used in ways that result in no adverse environmental impacts.
+
+Innovation in seeds, fertilizers and crop protection chemicals continues to bring forward significant advances in productivity. 
+
+Galileo Consulting has deep experience in the development and commercialization of seeds, fertilizers and chemicals, especially in the context of tropical agriculture.
+
+# What we offer
+
+We promote the use of high quality seeds, enhanced efficiency N, P and K fertilizers, and crop protection chemicals that are fit for purpose.
+
+Our expertise spans business case analysis, project planning and management, and product development and commercialization. Our breadth of technical experience and skills in quantitative analysis supports our ability to provide customers with options that provide a basis for solving complex problems.
